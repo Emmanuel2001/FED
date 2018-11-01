@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pizza Order Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="main.js"></script>
+
+</head>
+<body>
+    <form>
+        <h1>Pizza Order Form</h1>
+        <div>
+            <label>Pizza Type: </label>
+            <select required>
+                <option value="">Please Select</option>
+                    <option value="Aloha Chicken">Aloha Chicken</option>
+                    <option value="Beef Pepperoni">Beef Pepperoni</option>
+                    <option value="Chicken Delight">Chicken Delight</option>
+                    <option value="Deluxe Cheese">Deluxe Cheese</option>
+            </select>
+
+            <label>Quantity: </label>
+            <select required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+        
+        <div>
+            <fieldset>
+                <legend>Size</legend>
+                
+                <input type="radio" name="Size" value="Small" required/> Small
+                <input type="radio" name="Size" value="Regular"/> Regular
+                <input type="radio" name="Size" value="Large"/> Large
+                
+            </fieldset>
+        </div>
+        
+        <div>
+            <fieldset>
+                <legend>Crust</legend>
+                
+                <input type="radio" name="Crust" value="Thin" required/> Thin
+                <input type="radio" name="Crust" value="Thick"/> Thick
+                <input type="radio" name="Crust" value="Deep Dish"/> Deep Dish
+            </fieldset>
+        </div>
+
+        <div>
+            <fieldset>
+                <legend>Toppings</legend>
+                
+                <input type="checkbox" name="Toppings" value="Mushrooms"/> Mushrooms
+                <input type="checkbox" name="Toppings" value="Sausage"/> Sausage
+                <input type="checkbox" name="Toppings" value="Olives"/> Olives
+            </fieldset>
+        </div>
+
+        <br>
+
+        <div>
+            <label>Addons</label>
+
+            <select>
+                <option value="Please select addons if required">Please select addons if required</option>
+                <option value="Side of Buffalo Wings">Side of Buffalo Wings</option>
+                <option value="Garlic Bread">Garlic Bread</option>
+            </select>
+        </div>
+        
+        <br>
+
+        <div>
+            <fieldset>
+                <legend>Deliver to:</legend>
+
+                <label>Name:</label>
+                <input type="text" autocomplete="on" required/>
+
+                <br>
+                <br>
+                <label>Address:</label>
+                <textarea name="Address" rows="2" cols="30" required></textarea>
+
+                <label>Postal Code:</label>
+                <input type="text" pattern="\d{6}" maxlength="6" required />
+                <br>
+                <br>
+
+                <label>Phone:</label>
+                <input type="tel" required pattern="[968]\d{7}" required/>
+
+                <br>
+                <br>
+                
+                <label>Email:</label>
+                <input type="email" placeholder="Enter your Email here" required/>
+
+                <br>
+                <br>
+
+                <label>Date:</label>
+                <input type="date" min="2018-10-29" max="2018-11-4" required/>
+
+                <label>Time:</label>
+                <input type="time" min="10:00" max="22:00" step="900" value="10:00" required/>
+
+
+
+
+            </fieldset>
+        </div>
+
+        <input type="submit"/>
+    </form>
+</body>
+</html>

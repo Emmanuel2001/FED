@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Practical 3</title>
+    <meta name="description" content="Using Embedded Elements">
+    <meta name="author" content="Emmanuel Chan Shi Hong">
+    <link rel="icon" type="image/x-icon" href="media/HTMLBadge.ico" />
+
+    <!--Using bootstrap-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+  
+  
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+      <!--Create a header for the web page-->
+      <a class="navbar-brand" href="index.html">Week 3 Practical</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <!-- END nav -->
+    
+    <div class="hero-wrap">
+      <div class="overlay"></div>
+      <div class="circle-bg"></div>
+      <div class="circle-bg-2"></div>
+      <div class="container-fluid">
+        <div class="slider-text d-md-flex align-items-center" data-scrollax-parent="true">
+
+          <!--Link to external web page thru text and image-->
+          <div class="one-forth pr-md-4 ftco-animate align-self-md-center" data-scrollax=" properties: { translateY: '70%' }">
+          	<h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Web page through text<br>And<br>Image</h1>
+            <h3>Using Anchor &lta&gt</h3>
+            <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><a href="http://www.np.edu.sg" target="_blank"class="btn btn-primary px-4 py-3">Ngee Ann Poly</a></p>
+          </div>
+          <div class="one-half align-self-md-end align-self-sm-center">
+          	<div class="slider-carousel owl-carousel">
+          		<div class="item">
+                <!--Create hyperlink to link image-->
+                <h6>Creating a hyperlink to an image</h6>
+			          <a href="http://www.np.edu.sg" target="_blank"><img src="media/NPcrest.png" class="img-fluid img" alt="Ngee Ann Poly" href="http://www.np.edu.sg" target="_blank"></a>
+		          </div>
+	          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <section class="ftco-section bg-light">
+    	<div class="container">
+    		<div class="row justify-content-center mb-5 pb-5">
+          <!--Responsive Image-->
+          <div class="col-md-7 text-center heading-section ftco-animate">
+            <span class="subheading">Responsive Image</span>
+            <h3 class="mb-4">Different size of the same image for different viewport sizes</h3>
+          </div>
+          <img src="media/HTML5.jpg" alt="The HTML5 Badge logo"
+          srcset="media/HTML5.jpg 300w"
+          sizes="(max-width: 200px) 25vw, (max-width: 400px) 50vw, 
+            (max-width: 600px) 75vw, 100vw" />
+        </div>
+    	</div>
+    </section>
+
+    <section class="ftco-section bg-light">
+        <div class="container">
+          <div class="row justify-content-center mb-5 pb-5">
+            <!--Using Diff image for diff viewport sizes-->
+            <div class="col-md-7 text-center heading-section ftco-animate">
+              <span class="subheading">Using different images for different viewport sizes</span>
+              <h3 class="mb-4">Different image files for different viewport sizes</h3>
+            </div>
+            <picture>
+                <source media="(min-width: 650px)" srcset="media/img_pink_flowers.jpg">
+                <source media="(min-width: 465px)" srcset="media/img_white_flower.jpg">
+                <img src="media/img_orange_flowers.jpg" alt="Flowers" style="width:auto">
+            <cite>
+                <p>Source: W3 Schools</p>
+            </cite>
+            </picture>    
+          </div>
+        </div>
+      </section>
+
+      <section class="ftco-section bg-light">
+          <div class="container">
+            <div class="row justify-content-center mb-5 pb-5">
+              <!--Screen resolution based Image-->
+              <div class="col-md-7 text-center heading-section ftco-animate">
+                <span class="subheading">Provide different image files to cater for different screen resolutions</span>
+                <h3 class="mb-4">Screen resolution based image</h3>
+              </div>
+              <img src="media/image-src.png" 
+              srcset="media/image-1x.png 1x,
+                 media/image-2x.png 2x,
+                 media/image-3x.png 3x,
+                 media/image-4x.png 4x">
+            </div>
+          </div>
+        </section>
+
+    <section class="ftco-section-parallax">
+      <div class="parallax-img d-flex align-items-center">
+        <div class="container">
+          <div class="row d-flex justify-content-center">
+            <!--Image Map-->
+            <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+              <h2>Image Map </h2>
+
+              <div class="row d-flex justify-content-center mt-5">
+                
+                    <img src="media/Shapes.png" alt="Shapes" width="150" height="50" usemap="#shapeMap" />
+                    <map name="shapeMap">
+                    <area shape="rect" target="_blank" coords="0,0,50,50" alt="square" title="Square" 
+                          href="https://en.wikipedia.org/wiki/Square" />
+                    <area shape="circle" target="display" coords="75,25,25" alt="circle" title="Circle" 
+                          href="https://en.wikipedia.org/wiki/Circle" />
+                    <area shape="poly" coords="101,50,126,0,150,50" alt="triangle" title="Triangle" 
+                          href="https://en.wikipedia.org/wiki/Triangle" />
+                  </map>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row justify-content-center mb-5 pb-5">
+                <div class="col-md-7 text-center heading-section ftco-animate">
+            <span class="subheading">Challenge</span>
+            <h2 class="mb-4">Media</h2>
+          </div>
+            </div>
+            <div class="row">
+          <div class="col-md-12 nav-link-wrap mb-5 pb-md-5 pb-sm-1 ftco-animate">
+            <div class="nav ftco-animate nav-pills justify-content-center text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <a class="nav-link active" id="v-pills-nextgen-tab" data-toggle="pill" href="#v-pills-nextgen" role="tab" aria-controls="v-pills-nextgen" aria-selected="true">Audio 1</a>
+
+              <a class="nav-link" id="v-pills-performance-tab" data-toggle="pill" href="#v-pills-performance" role="tab" aria-controls="v-pills-performance" aria-selected="false">Audio 2</a>
+
+              <a class="nav-link" id="v-pills-effect-tab" data-toggle="pill" href="#v-pills-effect" role="tab" aria-controls="v-pills-effect" aria-selected="false">Video</a>
+            </div>
+          </div>
+          <div class="col-md-12 align-items-center ftco-animate">
+            <div class="tab-content ftco-animate" id="v-pills-tabContent">
+              <div class="tab-pane fade show active" id="v-pills-nextgen" role="tabpanel" aria-labelledby="v-pills-nextgen-tab">
+                  <div class="d-md-flex">
+                    <!--Audio 1-->
+                      <div class="one-forth align-self-center">
+                           <audio src="media//Linus_and_Lucy.mp3" alt="Audio1" controls >Audio not supported</audio>
+                      </div>
+                      <div class="one-half ml-md-5 align-self-center">
+                        <h2 class="mb-4">Audio 1</h2>
+                        <p>Linus and Lucy</p>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="tab-pane fade" id="v-pills-performance" role="tabpanel" aria-labelledby="v-pills-performance-tab">
+                <div class="d-md-flex">
+                  <!--Audio 2-->
+                      <div class="one-forth order-last align-self-center">
+                           <audio src="media//O the Blood.mp3"  controls alt="Audio2">Audio not supported</audio>
+                      </div>
+                      <div class="one-half order-first mr-md-5 align-self-center">
+                        <h2 class="mb-4">Audio 2</h2>
+                          <p>O the Blood</p>
+                          
+                      </div>
+                  </div>
+              </div>
+
+              <div class="tab-pane fade" id="v-pills-effect" role="tabpanel" aria-labelledby="v-pills-effect-tab">
+                <div class="d-md-flex">
+                  <!--Video-->
+                      <div class="one-forth align-self-center">
+                          <video src="media/BigBuckBunny.mp4" class="img-fluid border" alt="Video" poster="media/BBB_Poster.png" controls>Video not supported</video>
+                      </div>
+                      <div class="one-half ml-md-5 align-self-center">
+                        <h2 class="mb-4">Video</h2>
+                          <p>Big Buck Bunny</p>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+    </section>
+
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h3>Used bootstrap for the Template</h3>
+              <h2><p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p></h2>
+          </div>
+        </div>
+      </div>
+    </footer>
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
