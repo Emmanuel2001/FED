@@ -54,19 +54,9 @@ body {
 
 }
 
-.shine {
-    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjYyIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-    background: -moz-linear-gradient(top, rgba(255,255,255,0.62) 0%, rgba(255,255,255,0) 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.62)), color-stop(100%,rgba(255,255,255,0)));
-    background: -webkit-linear-gradient(top, rgba(255,255,255,0.62) 0%,rgba(255,255,255,0) 100%);
-    background: -o-linear-gradient(top, rgba(255,255,255,0.62) 0%,rgba(255,255,255,0) 100%);
-    background: -ms-linear-gradient(top, rgba(255,255,255,0.62) 0%,rgba(255,255,255,0) 100%);
-    background: linear-gradient(top, rgba(255,255,255,0.62) 0%,rgba(255,255,255,0) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9effffff', endColorstr='#00ffffff',GradientType=0 );
-}
 
 .container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     position: relative;
 }
@@ -189,12 +179,14 @@ nav li:hover::before {
         float: right;
         color: #F9AB33;
         background-color: black;
-        border: 5px solid;
+        border: 3px solid;
         padding: .25em 0.85em;
         border-radius: .5em;
-        margin: 1em;
+        margin: 0.35em;
     }
-
+    .logo{
+        margin: 0;
+    }
     input[type=checkbox]{
         display:none;
     }
@@ -483,7 +475,7 @@ button:hover {
     background-color: #fefefe;
     margin: 4% auto 15% auto;
     border: 1px solid #888;
-    width: 40%;
+    width: 70%;
     padding-bottom: 30px;
 }
 
