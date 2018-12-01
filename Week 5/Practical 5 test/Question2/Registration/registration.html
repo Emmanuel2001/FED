@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Emmanuel Chan Shi Hong" />
+    <meta name="description" content="Bonding Camp" />
+    <title>Bonding Camp</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <form>
+        <h2>Registration Form</h2>
+
+        <label>Course: </label>
+        <select required>
+            <option value="">Please Select</option>
+            <option value="A3DA">A3DA</option>
+            <option value="Fi">Fi</option>
+            <option value="IMGD">IMGD</option>
+            <option value="ISF">ISF</option>
+            <option value="IT">IT</option>
+        </select>
+        <br />
+        <br />
+
+        <label>Name:</label>
+        <input type="text" autocomplete="on" placeholder="Enter Your Name" required />
+        <br />
+        <br />
+        <label>Student number:</label>
+        <input type="text" placeholder="Enter your Student Number" required pattern="[S]\d{8}" />
+        <br />
+        <br />
+        <label>Gender: </label>
+
+        <input type="radio" name="Gender" value="Male" required /> Male
+        <input type="radio" name="Gender" value="Female" /> Female
+        <br />
+        <br />
+        <label>Email:</label>
+        <input type="email" placeholder="Enter your Email here" required />
+        <br />
+        <br />
+        <label>Home Address:</label>
+        <textarea name="Address" rows="2" cols="30" placeholder="Enter your home address" required></textarea>
+        <br />
+        <br />
+        <label>Meal:</label>
+        <input type="checkbox" name="meal" value="Breakfast" /> Breakfast
+        <input type="checkbox" name="meal" value="Lunch" /> Lunch
+        <input type="checkbox" name="meal" value="Dinner" /> Dinner
+        <br />
+        <br />
+        <input type="submit" />
+        <input type="reset" />
+
+
+    </form>
+    <footer>
+        <address>
+            <strong>Developed by</strong>: Emmanuel Chan Shi Hong
+        </address>
+    </footer>
+
+</body>
+</html>

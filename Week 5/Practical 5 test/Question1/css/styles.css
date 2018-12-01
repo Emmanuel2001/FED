@@ -1,0 +1,25 @@
+﻿table {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-collapse:collapse;
+    padding: 4px;
+}
+tr, th, td {
+    border: thin solid black;
+    padding: 10px;
+}
+
+.event{text-align:left;
+       border: 1px solid;
+}
+caption{
+    font-size: 24px;
+}
+
+.breaks{
+    background-color: lightgray;
+}
+footer{
+    padding-top: 10px;
+    text-align:left;
+}
